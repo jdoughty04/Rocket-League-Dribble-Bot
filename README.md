@@ -36,14 +36,12 @@ The action space consists of several available movements, such as turning (conti
 
 
 With some meticulous experimenting, I found the following observation space to work well:
-1. Rotated ball acceleration -- The ball's acceleration vector, rotated according to the car's orientation
-2. Ball touches -- A list of 3 binary flags indicating whether the agent has touched the ball, for the last 3 time steps
-3. Car speed
-4. Relative ball position rotated -- Car to ball vector, rotated based on the orientation of the car
-5. Relative ball velocity rotated -- Difference between ball velocity and car velocity, rotated depending on orientation of car
+1. Relative ball position rotated -- Car to ball vector, rotated based on the orientation of the car
+2. Relative ball velocity rotated -- Difference between ball velocity and car velocity, rotated depending on orientation of car
+3. Ball touches -- A list of 3 binary flags indicating whether the agent has touched the ball, for the last 3 time steps
+4. Rotated ball acceleration -- The ball's acceleration vector, rotated according to the car's orientation
+5. Car speed
 6. Distance to wall -- Distance to the closest wall in car's forward direction 
-
-
 7. Wall bump feature -- is 1 or -1 depending on the orientation of the closest wall in the car's forward direction. 
 * This is meant to indicate whether the agent should turn left, or right to avoid bumping into the nearest forward wall
 
